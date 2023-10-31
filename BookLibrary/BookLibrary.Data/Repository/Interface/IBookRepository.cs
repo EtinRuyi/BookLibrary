@@ -1,5 +1,4 @@
 ﻿using BookLibrary.Model.Entities;
-using Microsoft.AspNetCore.Http;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -16,5 +15,6 @@ namespace BookLibrary.Data.Repository.Interface
         Task<IEnumerable<Book>> GetAllBooks(int itemstoskip, int pageSize);
         Task<Book> GetBookById(Guid id);
         Task<Book> GetBookByTitleAndAuthor(string title, string author);
+
     }
 }

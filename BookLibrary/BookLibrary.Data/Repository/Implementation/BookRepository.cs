@@ -37,7 +37,7 @@ namespace BookLibrary.Data.Repository.Implementation
 
         public async Task<Book> UpdateBook(Book book)
         {
-            _dbContext.Books.Update(book);
+            _dbContext.Update(book);
             await _dbContext.SaveChangesAsync();
             return book;
         }
@@ -46,6 +46,8 @@ namespace BookLibrary.Data.Repository.Implementation
         {
             return await _dbContext.Books.FirstOrDefaultAsync(book => book.Title == title && book.Author == author);
         }
+
+       
 
     }
 }
