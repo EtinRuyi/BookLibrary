@@ -55,5 +55,19 @@ namespace BookLibrary.Controllers.BookController
         {
             return Ok(await _bookService.SearchBookByTitleAndAuthor(title, author));
         }
+
+        [HttpPatch("ImageUpload/{id}")]
+        public async Task<IActionResult> UploadPhoto(Guid id, IFormFile image)
+        {
+            var response = await _bookService.UpdatePhoto(id, image);
+            if (response != null)
+            {
+                return Ok(response);
+            }
+            else
+            {
+                return NotFound("Book not found or image not provided.");
+            }
+        }
     }
 }
