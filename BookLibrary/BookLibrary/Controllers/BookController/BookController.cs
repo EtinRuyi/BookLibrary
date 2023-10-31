@@ -60,6 +60,7 @@ namespace BookLibrary.Controllers.BookController
         public async Task<IActionResult> UploadPhoto(Guid id, IFormFile image)
         {
             var response = await _bookService.UpdatePhoto(id, image);
+            var repAdd = "";
             if (response != null)
             {
                 return Ok(response);
