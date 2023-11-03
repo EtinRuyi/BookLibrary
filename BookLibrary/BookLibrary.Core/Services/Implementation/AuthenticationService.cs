@@ -23,13 +23,13 @@ namespace BookLibrary.Core.Services.Implementation
         {
             _authenticationRepo = authenticationRepo;
             _signInManager = signInManager;
-            _userManager = userManager; 
+            _userManager = userManager;
             _config = config;
         }
 
         public async Task<BaseResponse<UserRegDTO>> Register(UserRegDTO userreg)
         {
-           
+
             var response = new BaseResponse<UserRegDTO>();
             try
             {
@@ -54,6 +54,7 @@ namespace BookLibrary.Core.Services.Implementation
                     if (await _authenticationRepo.AddUser(user, userreg.Password))
                     {
                         response.Message = "User registered successfully";
+                        response.Data = userreg;
                         response.IsSuccessful = true;
                         response.ResponseCode = 200;
                     }
@@ -63,27 +64,92 @@ namespace BookLibrary.Core.Services.Implementation
             catch (Exception e)
             {
 
-                response.Message = "Error: "+e;
+                response.Message = "Error: " + e;
                 response.IsSuccessful = true;
                 response.ResponseCode = 200;
                 return response;
             }
         }
 
-        public async Task<string> Login(LoginRequestDto loginRequestDto)
+        //public async Task<string> Login(LoginRequestDto loginRequestDto)
+        //{
+        //    var user = await _authenticationRepo.GetUserByEmail(loginRequestDto.Email);
+        //    if(user != null)
+        //    {
+        //        var result = await _signInManager.CheckPasswordSignInAsync(user, loginRequestDto.Password,lockoutOnFailure:false);
+        //        if (result.Succeeded)
+        //        {
+        //            var role = (await _userManager.GetRolesAsync(user)).FirstOrDefault();
+        //            return GenerateJwtToken(user, role);
+        //        }
+        //    }
+        //    return "Invalid login details";
+        //}
+
+        public async Task<BaseResponse<string>> Login(LoginRequestDto loginRequestDto)
         {
-            var user = await _authenticationRepo.GetUserByEmail(loginRequestDto.Email);
-            if(user != null)
+            var response = new BaseResponse<string>();
+
+            try
             {
-                var result = await _signInManager.CheckPasswordSignInAsync(user, loginRequestDto.Password,lockoutOnFailure:false);
-                if (result.Succeeded)
+                var user = await _authenticationRepo.GetUserByEmail(loginRequestDto.Email);
+                if (user != null)
                 {
-                    var role = (await _userManager.GetRolesAsync(user)).FirstOrDefault();
-                    return GenerateJwtToken(user, role);
+                    var result = await _signInManager.CheckPasswordSignInAsync(user, loginRequestDto.Password, lockoutOnFailure: false);
+                    if (result.Succeeded)
+                    {
+                        var role = (await _userManager.GetRolesAsync(user)).FirstOrDefault();
+                        response.Data = GenerateJwtToken(user, role);
+                        response.IsSuccessful = true;
+                        response.ResponseCode = 200;
+                        response.Message = "Login successful";
+                    }
+                    else
+                    {
+                        response.IsSuccessful = false;
+                        response.ResponseCode = 401;
+                        response.Message = "Invalid login details";
+                    }
+                }
+                else
+                {
+                    response.IsSuccessful = false;
+                    response.ResponseCode = 401;
+                    response.Message = "Invalid login details";
                 }
             }
-            return "Invalid login details";
+            catch (Exception e)
+            {
+                response.IsSuccessful = false;
+                response.ResponseCode = 500;
+                response.Message = "Error: " + e.Message;
+            }
+
+            return response;
         }
+
+
+        public async Task<BaseResponse<string>> Logout()
+        {
+            var response = new BaseResponse<string>();
+
+            try
+            {
+                await _authenticationRepo.Logout();
+                response.IsSuccessful = true;
+                response.ResponseCode = 200;
+                response.Message = "Logged out successfully";
+            }
+            catch (Exception e)
+            {
+                response.IsSuccessful = false;
+                response.ResponseCode = 500;
+                response.Message = "Error: " + e.Message;
+            }
+
+            return response;
+        }
+
 
         private string GenerateJwtToken(User contact, string roles)
         {

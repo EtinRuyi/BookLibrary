@@ -174,10 +174,10 @@ namespace BookLibrary.Core.Services.Implementation
             return response;
         }
 
-        public async Task<BaseResponse<BookReturnDto>> UpdateBook(BookReturnDto book, Guid id)
+        public async Task<BaseResponse<BookUpdateDto>> UpdateBook(BookUpdateDto book, Guid id)
         {
             var getbook = _bookRepository.GetBookById(id);
-            var response = new BaseResponse<BookReturnDto>();
+            var response = new BaseResponse<BookUpdateDto>();
 
             if (getbook != null)
             {
@@ -195,9 +195,9 @@ namespace BookLibrary.Core.Services.Implementation
                 };
                 var updatedbook = await _bookRepository.UpdateBook(bookmodel);
 
-                var returnBookDto = new BookReturnDto
+                var returnBookDto = new BookUpdateDto
                 {
-                    Id = updatedbook.Id,
+                    //Id = updatedbook.Id,
                     Title = updatedbook.Title,
                     Author = updatedbook.Author,
                     GenreId = updatedbook.GenreId,

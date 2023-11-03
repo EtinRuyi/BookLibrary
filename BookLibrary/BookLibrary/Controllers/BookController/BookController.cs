@@ -39,7 +39,7 @@ namespace BookLibrary.Controllers.BookController
 
         [HttpPut]
         [Route("UpdateBook")]
-        public async Task<IActionResult> UpdateBook(BookReturnDto bookReturnDto, Guid id)
+        public async Task<IActionResult> UpdateBook(BookUpdateDto bookReturnDto, Guid id)
         {
             return Ok(await _bookService.UpdateBook(bookReturnDto, id));
         }

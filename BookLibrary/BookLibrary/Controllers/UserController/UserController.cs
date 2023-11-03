@@ -1,5 +1,6 @@
 ﻿using BookLibrary.Core.Services.Interface;
 using BookLibrary.Model.DTOs;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace BookLibrary.Controllers.UserController
@@ -14,16 +15,15 @@ namespace BookLibrary.Controllers.UserController
         {
             _userService = userService;
         }
-
-        [HttpGet]
-        [Route("AllUsers")]
+        [Authorize(Roles ="RegularUser")]
+        [HttpGet("AllUsers")]
         public async Task<IActionResult> GetAllUsers(int pagenumber=1, int pagesize=10)
         {
            var allusers = await _userService.GetAllUsers(pagenumber,pagesize);
             return Ok(allusers);
         }
 
-        [HttpGet]
+        [HttpGet("GetUserById")]
         [Route("GetUserById")]
         public async Task<IActionResult> GetUserById(Guid id)
         {
