@@ -74,25 +74,6 @@ C:\Users\HP\Desktop\LIB\BookLibrary\BookLibrary\BookLibrary.Core\obj\Debug\net7.
 C:\Users\HP\Desktop\LIB\BookLibrary\BookLibrary\BookLibrary.Core\obj\Debug\net7.0\BookLibrary.Core.pdb
 C:\Users\HP\Desktop\LIB\BookLibrary\BookLibrary\BookLibrary.Core\obj\Debug\net7.0\BookLibrary.Core.genruntimeconfig.cache
 C:\Users\HP\Desktop\LIB\BookLibrary\BookLibrary\BookLibrary.Core\obj\Debug\net7.0\ref\BookLibrary.Core.dll
-C:\Users\omoru\Downloads\BookLibrary 1\BookLibrary\BookLibrary.Core\bin\Debug\net7.0\BookLibrary.Core.deps.json
-C:\Users\omoru\Downloads\BookLibrary 1\BookLibrary\BookLibrary.Core\bin\Debug\net7.0\BookLibrary.Core.runtimeconfig.json
-C:\Users\omoru\Downloads\BookLibrary 1\BookLibrary\BookLibrary.Core\bin\Debug\net7.0\BookLibrary.Core.dll
-C:\Users\omoru\Downloads\BookLibrary 1\BookLibrary\BookLibrary.Core\bin\Debug\net7.0\BookLibrary.Core.pdb
-C:\Users\omoru\Downloads\BookLibrary 1\BookLibrary\BookLibrary.Core\bin\Debug\net7.0\BookLibrary.Data.dll
-C:\Users\omoru\Downloads\BookLibrary 1\BookLibrary\BookLibrary.Core\bin\Debug\net7.0\BookLibrary.Model.dll
-C:\Users\omoru\Downloads\BookLibrary 1\BookLibrary\BookLibrary.Core\bin\Debug\net7.0\BookLibrary.Data.pdb
-C:\Users\omoru\Downloads\BookLibrary 1\BookLibrary\BookLibrary.Core\bin\Debug\net7.0\BookLibrary.Model.pdb
-C:\Users\omoru\Downloads\BookLibrary 1\BookLibrary\BookLibrary.Core\obj\Debug\net7.0\BookLibrary.Core.csproj.AssemblyReference.cache
-C:\Users\omoru\Downloads\BookLibrary 1\BookLibrary\BookLibrary.Core\obj\Debug\net7.0\BookLibrary.Core.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\omoru\Downloads\BookLibrary 1\BookLibrary\BookLibrary.Core\obj\Debug\net7.0\BookLibrary.Core.AssemblyInfoInputs.cache
-C:\Users\omoru\Downloads\BookLibrary 1\BookLibrary\BookLibrary.Core\obj\Debug\net7.0\BookLibrary.Core.AssemblyInfo.cs
-C:\Users\omoru\Downloads\BookLibrary 1\BookLibrary\BookLibrary.Core\obj\Debug\net7.0\BookLibrary.Core.csproj.CoreCompileInputs.cache
-C:\Users\omoru\Downloads\BookLibrary 1\BookLibrary\BookLibrary.Core\obj\Debug\net7.0\BookLibrary.Core.csproj.CopyComplete
-C:\Users\omoru\Downloads\BookLibrary 1\BookLibrary\BookLibrary.Core\obj\Debug\net7.0\BookLibrary.Core.dll
-C:\Users\omoru\Downloads\BookLibrary 1\BookLibrary\BookLibrary.Core\obj\Debug\net7.0\refint\BookLibrary.Core.dll
-C:\Users\omoru\Downloads\BookLibrary 1\BookLibrary\BookLibrary.Core\obj\Debug\net7.0\BookLibrary.Core.pdb
-C:\Users\omoru\Downloads\BookLibrary 1\BookLibrary\BookLibrary.Core\obj\Debug\net7.0\BookLibrary.Core.genruntimeconfig.cache
-C:\Users\omoru\Downloads\BookLibrary 1\BookLibrary\BookLibrary.Core\obj\Debug\net7.0\ref\BookLibrary.Core.dll
 C:\Users\omoru\Desktop\BookLibrary\BookLibrary\BookLibrary.Core\bin\Debug\net7.0\BookLibrary.Core.deps.json
 C:\Users\omoru\Desktop\BookLibrary\BookLibrary\BookLibrary.Core\bin\Debug\net7.0\BookLibrary.Core.runtimeconfig.json
 C:\Users\omoru\Desktop\BookLibrary\BookLibrary\BookLibrary.Core\bin\Debug\net7.0\BookLibrary.Core.dll
