@@ -1,8 +1,6 @@
 ﻿using BookLibrary.Core.Services.Interface;
 using BookLibrary.Model.DTOs;
-using BookLibrary.Model.Entities.Shared;
 using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 
 namespace BookLibrary.Controllers.Auth
@@ -12,12 +10,10 @@ namespace BookLibrary.Controllers.Auth
     public class AuthController : ControllerBase
     {
         private readonly IAuthenticationService _authenticationService;
-
         public AuthController(IAuthenticationService authenticationService)
         {
             _authenticationService = authenticationService;
         }
-
 
         [HttpPost("Login")]
         public async Task<IActionResult> Login(LoginRequestDto loginRequestDto)
@@ -37,21 +33,5 @@ namespace BookLibrary.Controllers.Auth
             }
             return Ok(await _authenticationService.Register(userRegDTO));
         }
-
-        [HttpPost("Logout")]
-        public async Task<IActionResult> Logout()
-        {
-            var result = await _authenticationService.Logout();
-
-            if (result.IsSuccessful)
-            {
-                return Ok();
-            }
-            else
-            {
-                return StatusCode(result.ResponseCode, new { Message = result.Message });
-            }
-        }
-
     }
 }

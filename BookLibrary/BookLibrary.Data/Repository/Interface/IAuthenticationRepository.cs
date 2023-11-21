@@ -14,5 +14,7 @@ namespace BookLibrary.Data.Repository.Interface
         Task<bool> AddUser(User user, string password);
         Task<bool> Logout();
         Task<User> GetUserByEmail(string email);
+        //Task<bool> ResetPassword(string newPassword);
+        //Task<bool> ConfirmEmail();
     }
 }

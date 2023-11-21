@@ -39,7 +39,7 @@ namespace BookLibrary.Controllers.BookController
 
         [HttpPut]
         [Route("UpdateBook")]
-        public async Task<IActionResult> UpdateBook(BookUpdateDto bookReturnDto, Guid id)
+        public async Task<IActionResult> UpdateBook(BookReturnDto bookReturnDto, Guid id)
         {
             return Ok(await _bookService.UpdateBook(bookReturnDto, id));
         }
@@ -54,21 +54,6 @@ namespace BookLibrary.Controllers.BookController
         public async Task<IActionResult> SerachByTitleAndAuthor(string title, string author)
         {
             return Ok(await _bookService.SearchBookByTitleAndAuthor(title, author));
-        }
-
-        [HttpPatch("ImageUpload/{id}")]
-        public async Task<IActionResult> UploadPhoto(Guid id, IFormFile image)
-        {
-            var response = await _bookService.UpdatePhoto(id, image);
-            var repAdd = "";
-            if (response != null)
-            {
-                return Ok(response);
-            }
-            else
-            {
-                return NotFound("Book not found or image not provided.");
-            }
         }
     }
 }

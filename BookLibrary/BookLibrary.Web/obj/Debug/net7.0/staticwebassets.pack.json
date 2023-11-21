@@ -5,16 +5,28 @@
       "PackagePath": "staticwebassets\\BookLibrary.Web.bundle.scp.css"
     },
     {
+      "Id": "C:\\Users\\omoru\\Desktop\\BookLibrary\\BookLibrary\\BookLibrary.Web\\wwwroot\\css\\admin.styles.css",
+      "PackagePath": "staticwebassets\\css\\admin.styles.css"
+    },
+    {
+      "Id": "C:\\Users\\omoru\\Desktop\\BookLibrary\\BookLibrary\\BookLibrary.Web\\wwwroot\\css\\icomoon.css",
+      "PackagePath": "staticwebassets\\css\\icomoon.css"
+    },
+    {
+      "Id": "C:\\Users\\omoru\\Desktop\\BookLibrary\\BookLibrary\\BookLibrary.Web\\wwwroot\\css\\normalize.css",
+      "PackagePath": "staticwebassets\\css\\normalize.css"
+    },
+    {
       "Id": "C:\\Users\\omoru\\Desktop\\BookLibrary\\BookLibrary\\BookLibrary.Web\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
     {
-      "Id": "C:\\Users\\omoru\\Desktop\\BookLibrary\\BookLibrary\\BookLibrary.Web\\wwwroot\\csss\\style.css",
-      "PackagePath": "staticwebassets\\csss\\style.css"
+      "Id": "C:\\Users\\omoru\\Desktop\\BookLibrary\\BookLibrary\\BookLibrary.Web\\wwwroot\\css\\style.css",
+      "PackagePath": "staticwebassets\\css\\style.css"
     },
     {
-      "Id": "C:\\Users\\omoru\\Desktop\\BookLibrary\\BookLibrary\\BookLibrary.Web\\wwwroot\\csss\\style.css.map",
-      "PackagePath": "staticwebassets\\csss\\style.css.map"
+      "Id": "C:\\Users\\omoru\\Desktop\\BookLibrary\\BookLibrary\\BookLibrary.Web\\wwwroot\\css\\vendor.css",
+      "PackagePath": "staticwebassets\\css\\vendor.css"
     },
     {
       "Id": "C:\\Users\\omoru\\Desktop\\BookLibrary\\BookLibrary\\BookLibrary.Web\\wwwroot\\favicon.ico",
@@ -369,6 +381,54 @@
       "PackagePath": "staticwebassets\\fonts\\poppins\\roboto-condensed-v16-latin-regular.woff2"
     },
     {
+      "Id": "C:\\Users\\omoru\\Desktop\\BookLibrary\\BookLibrary\\BookLibrary.Web\\wwwroot\\images\\client-image1.png",
+      "PackagePath": "staticwebassets\\images\\client-image1.png"
+    },
+    {
+      "Id": "C:\\Users\\omoru\\Desktop\\BookLibrary\\BookLibrary\\BookLibrary.Web\\wwwroot\\images\\client-image2.png",
+      "PackagePath": "staticwebassets\\images\\client-image2.png"
+    },
+    {
+      "Id": "C:\\Users\\omoru\\Desktop\\BookLibrary\\BookLibrary\\BookLibrary.Web\\wwwroot\\images\\client-image3.png",
+      "PackagePath": "staticwebassets\\images\\client-image3.png"
+    },
+    {
+      "Id": "C:\\Users\\omoru\\Desktop\\BookLibrary\\BookLibrary\\BookLibrary.Web\\wwwroot\\images\\client-image4.png",
+      "PackagePath": "staticwebassets\\images\\client-image4.png"
+    },
+    {
+      "Id": "C:\\Users\\omoru\\Desktop\\BookLibrary\\BookLibrary\\BookLibrary.Web\\wwwroot\\images\\client-image5.png",
+      "PackagePath": "staticwebassets\\images\\client-image5.png"
+    },
+    {
+      "Id": "C:\\Users\\omoru\\Desktop\\BookLibrary\\BookLibrary\\BookLibrary.Web\\wwwroot\\images\\heart.svg",
+      "PackagePath": "staticwebassets\\images\\heart.svg"
+    },
+    {
+      "Id": "C:\\Users\\omoru\\Desktop\\BookLibrary\\BookLibrary\\BookLibrary.Web\\wwwroot\\images\\main-banner1.jpg",
+      "PackagePath": "staticwebassets\\images\\main-banner1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\omoru\\Desktop\\BookLibrary\\BookLibrary\\BookLibrary.Web\\wwwroot\\images\\main-logo.png",
+      "PackagePath": "staticwebassets\\images\\main-logo.png"
+    },
+    {
+      "Id": "C:\\Users\\omoru\\Desktop\\BookLibrary\\BookLibrary\\BookLibrary.Web\\wwwroot\\images\\product-item1.jpg",
+      "PackagePath": "staticwebassets\\images\\product-item1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\omoru\\Desktop\\BookLibrary\\BookLibrary\\BookLibrary.Web\\wwwroot\\images\\product-item2.jpg",
+      "PackagePath": "staticwebassets\\images\\product-item2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\omoru\\Desktop\\BookLibrary\\BookLibrary\\BookLibrary.Web\\wwwroot\\images\\product-item3.jpg",
+      "PackagePath": "staticwebassets\\images\\product-item3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\omoru\\Desktop\\BookLibrary\\BookLibrary\\BookLibrary.Web\\wwwroot\\images\\product-item4.jpg",
+      "PackagePath": "staticwebassets\\images\\product-item4.jpg"
+    },
+    {
       "Id": "C:\\Users\\omoru\\Desktop\\BookLibrary\\BookLibrary\\BookLibrary.Web\\wwwroot\\images\\signin-image.jpg",
       "PackagePath": "staticwebassets\\images\\signin-image.jpg"
     },
@@ -377,12 +437,56 @@
       "PackagePath": "staticwebassets\\images\\signup-image.jpg"
     },
     {
-      "Id": "C:\\Users\\omoru\\Desktop\\BookLibrary\\BookLibrary\\BookLibrary.Web\\wwwroot\\js\\site.js",
-      "PackagePath": "staticwebassets\\js\\site.js"
+      "Id": "C:\\Users\\omoru\\Desktop\\BookLibrary\\BookLibrary\\BookLibrary.Web\\wwwroot\\images\\single-image.jpg",
+      "PackagePath": "staticwebassets\\images\\single-image.jpg"
     },
     {
-      "Id": "C:\\Users\\omoru\\Desktop\\BookLibrary\\BookLibrary\\BookLibrary.Web\\wwwroot\\jss\\main.js",
-      "PackagePath": "staticwebassets\\jss\\main.js"
+      "Id": "C:\\Users\\omoru\\Desktop\\BookLibrary\\BookLibrary\\BookLibrary.Web\\wwwroot\\images\\tab-item1.jpg",
+      "PackagePath": "staticwebassets\\images\\tab-item1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\omoru\\Desktop\\BookLibrary\\BookLibrary\\BookLibrary.Web\\wwwroot\\images\\tab-item2.jpg",
+      "PackagePath": "staticwebassets\\images\\tab-item2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\omoru\\Desktop\\BookLibrary\\BookLibrary\\BookLibrary.Web\\wwwroot\\images\\tab-item3.jpg",
+      "PackagePath": "staticwebassets\\images\\tab-item3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\omoru\\Desktop\\BookLibrary\\BookLibrary\\BookLibrary.Web\\wwwroot\\images\\tab-item4.jpg",
+      "PackagePath": "staticwebassets\\images\\tab-item4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\omoru\\Desktop\\BookLibrary\\BookLibrary\\BookLibrary.Web\\wwwroot\\images\\tab-item5.jpg",
+      "PackagePath": "staticwebassets\\images\\tab-item5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\omoru\\Desktop\\BookLibrary\\BookLibrary\\BookLibrary.Web\\wwwroot\\images\\tab-item6.jpg",
+      "PackagePath": "staticwebassets\\images\\tab-item6.jpg"
+    },
+    {
+      "Id": "C:\\Users\\omoru\\Desktop\\BookLibrary\\BookLibrary\\BookLibrary.Web\\wwwroot\\images\\tab-item7.jpg",
+      "PackagePath": "staticwebassets\\images\\tab-item7.jpg"
+    },
+    {
+      "Id": "C:\\Users\\omoru\\Desktop\\BookLibrary\\BookLibrary\\BookLibrary.Web\\wwwroot\\images\\tab-item8.jpg",
+      "PackagePath": "staticwebassets\\images\\tab-item8.jpg"
+    },
+    {
+      "Id": "C:\\Users\\omoru\\Desktop\\BookLibrary\\BookLibrary\\BookLibrary.Web\\wwwroot\\js\\jquery-1.11.0.min.js",
+      "PackagePath": "staticwebassets\\js\\jquery-1.11.0.min.js"
+    },
+    {
+      "Id": "C:\\Users\\omoru\\Desktop\\BookLibrary\\BookLibrary\\BookLibrary.Web\\wwwroot\\js\\plugins.js",
+      "PackagePath": "staticwebassets\\js\\plugins.js"
+    },
+    {
+      "Id": "C:\\Users\\omoru\\Desktop\\BookLibrary\\BookLibrary\\BookLibrary.Web\\wwwroot\\js\\script.js",
+      "PackagePath": "staticwebassets\\js\\script.js"
+    },
+    {
+      "Id": "C:\\Users\\omoru\\Desktop\\BookLibrary\\BookLibrary\\BookLibrary.Web\\wwwroot\\js\\site.js",
+      "PackagePath": "staticwebassets\\js\\site.js"
     },
     {
       "Id": "C:\\Users\\omoru\\Desktop\\BookLibrary\\BookLibrary\\BookLibrary.Web\\wwwroot\\lib\\bootstrap\\LICENSE",

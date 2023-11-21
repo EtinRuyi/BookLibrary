@@ -1,13 +1,9 @@
-﻿using BookLibrary.Commons.Cloudinary;
-using BookLibrary.Core.Services.Interface;
+﻿using BookLibrary.Core.Services.Interface;
 using BookLibrary.Data.Repository.Implementation;
 using BookLibrary.Data.Repository.Interface;
 using BookLibrary.Model.DTOs;
 using BookLibrary.Model.Entities;
 using BookLibrary.Model.Entities.Shared;
-using CloudinaryDotNet;
-using CloudinaryDotNet.Actions;
-using Microsoft.AspNetCore.Http;
 
 namespace BookLibrary.Core.Services.Implementation
 {
@@ -174,10 +170,10 @@ namespace BookLibrary.Core.Services.Implementation
             return response;
         }
 
-        public async Task<BaseResponse<BookUpdateDto>> UpdateBook(BookUpdateDto book, Guid id)
+        public async Task<BaseResponse<BookReturnDto>> UpdateBook(BookReturnDto book, Guid id)
         {
             var getbook = _bookRepository.GetBookById(id);
-            var response = new BaseResponse<BookUpdateDto>();
+            var response = new BaseResponse<BookReturnDto>();
 
             if (getbook != null)
             {
@@ -195,9 +191,9 @@ namespace BookLibrary.Core.Services.Implementation
                 };
                 var updatedbook = await _bookRepository.UpdateBook(bookmodel);
 
-                var returnBookDto = new BookUpdateDto
+                var returnBookDto = new BookReturnDto
                 {
-                    //Id = updatedbook.Id,
+                    Id = updatedbook.Id,
                     Title = updatedbook.Title,
                     Author = updatedbook.Author,
                     GenreId = updatedbook.GenreId,
@@ -250,40 +246,6 @@ namespace BookLibrary.Core.Services.Implementation
                 }                
             }
             return response;
-        }
-
-        public async Task<Book> UpdatePhoto(Guid id, IFormFile image)
-        {
-            try
-            {
-                var book = await _bookRepository.GetBookById(id);
-                if (book == null || image.Length <= 0)
-                {
-                    return null; // Return null to indicate that the book was not found.
-                }
-
-                var cloudinaryAcc = new Cloudinary(new Account(
-                    CloudinarySettings.CloudName,
-                    CloudinarySettings.Key,
-                    CloudinarySettings.Secret
-                ));
-
-                var upload = new ImageUploadParams
-                {
-                    File = new FileDescription(image.FileName, image.OpenReadStream())
-                };
-                var uploadResult = await cloudinaryAcc.UploadAsync(upload);
-                book.ImageUrl = uploadResult.SecureUrl.AbsoluteUri;
-
-                // Update the book in the database
-                await _bookRepository.UpdateBook(book);
-
-                return book;
-            }
-            catch (Exception ex)
-            {
-                throw new Exception(ex.Message);
-            }
         }
     }
 }

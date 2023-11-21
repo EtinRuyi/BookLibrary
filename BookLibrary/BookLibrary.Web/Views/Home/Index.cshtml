@@ -2,50 +2,778 @@
     ViewData["Title"] = "Home Page";
 }
 
-<div class="main">
 
-        <section class="sign-in">
-            <div class="container">
-                <div class="signin-content">
-                    <div class="signin-image">
-                        <figure><img src="images/signin-image.jpg" alt="sing up image"></figure>
-                       
-                    </div>
-        
-                    <div class="signin-form">
-                        <h2 class="form-title">Login</h2>
-                        <form method="POST" class="register-form" id="login-form">
-                            <div class="form-group">
-                                <label for="your_name"><i class="zmdi zmdi-account material-icons-name"></i></label>
-                                <input type="text" name="your_name" id="your_name" placeholder="Your Email"/>
-                            </div>
-                            <div class="form-group">
-                                <label for="your_pass"><i class="zmdi zmdi-lock"></i></label>
-                                <input type="password" name="your_pass" id="your_pass" placeholder="Password"/>
-                            </div>
-                            <div class="form-group">
-                                <input type="checkbox" name="remember-me" id="remember-me" class="agree-term" />
-                                <label for="remember-me" class="label-agree-term"><span><span></span></span>Remember me</label>
-                            </div>
-                            <div class="form-group form-button">
-                                <input type="submit" name="signin" id="signin" class="form-submit" value="Log in"/> 
-                                
-                            </div>
-                        </form>
-                        <div class="social-login" style="">
-                            <span class="social-label">Not a member?</span>
-                            <ul class="socials">
-                                <li><a href="#" class="">Create an account</a></li>
-                                <!-- <li><a href="#"><i class="display-flex-center zmdi zmdi-twitter"></i></a></li>
-                                <li><a href="#"><i class="display-flex-center zmdi zmdi-google"></i></a></li> -->
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- Sign up form -->
-       
 
-       
-    </div>
+	<div id="header-wrap">
+
+		<div class="top-content">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-md-6">
+						<div class="social-links">
+							<ul>
+								<li>
+									<a href="#"><i class="icon icon-facebook"></i></a>
+								</li>
+								<li>
+									<a href="#"><i class="icon icon-twitter"></i></a>
+								</li>
+								<li>
+									<a href="#"><i class="icon icon-youtube-play"></i></a>
+								</li>
+								<li>
+									<a href="#"><i class="icon icon-behance-square"></i></a>
+								</li>
+							</ul>
+						</div><!--social-links-->
+					</div>
+					<div class="col-md-6">
+						<div class="right-element">
+							<a href="#" class="user-account for-buy">
+								<i class="icon icon-user"></i><span>Account</span>
+							</a>
+							<a href="#" class="cart for-buy">
+								<i class="icon icon-clipboard"></i><span>
+									Cart:(0
+									$)
+								</span>
+							</a>
+
+							<div class="action-menu">
+
+								<div class="search-bar">
+									<a href="#" class="search-button search-toggle" data-selector="#header-wrap">
+										<i class="icon icon-search"></i>
+									</a>
+									<form role="search" method="get" class="search-box">
+										<input class="search-field text search-input" placeholder="Search"
+											   type="search">
+									</form>
+								</div>
+							</div>
+
+						</div><!--top-right-->
+					</div>
+
+				</div>
+			</div>
+		</div><!--top-content-->
+
+		<header id="header">
+			<div class="container-fluid">
+				<div class="row">
+
+					<div class="col-md-2">
+						<div class="main-logo">
+							<a href="index.html"><img src="images/main-logo.png" alt="logo"></a>
+						</div>
+
+					</div>
+
+					<div class="col-md-10">
+
+						<nav id="navbar">
+							<div class="main-menu stellarnav">
+								<ul class="menu-list">
+									<li class="menu-item active"><a href="#">Home</a></li>
+									<li class="menu-item"><a href="#popular-books" class="nav-link">All Genre</a></li>
+									<li class="menu-item"><a href="#best-selling" class="nav-link">Most Popular</a></li>
+									<li class="menu-item"><a href="#quotation" class="nav-link">Quote</a></li>
+
+									<li class="menu-item">
+										<a href=""
+										   class="nav-link btn btn-outline-dark rounded-pill m-0"
+										   target="_blank">Login</a>
+									</li>
+								</ul>
+
+								<div class="hamburger">
+									<span class="bar"></span>
+									<span class="bar"></span>
+									<span class="bar"></span>
+								</div>
+
+							</div>
+						</nav>
+
+					</div>
+
+				</div>
+			</div>
+		</header>
+
+	</div><!--header-wrap-->
+
+
+	<section id="billboard">
+
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+
+					<button class="prev slick-arrow">
+						<i class="icon icon-arrow-left"></i>
+					</button>
+
+					<div class="main-slider pattern-overlay">
+						<div class="slider-item">
+							<div class="banner-content">
+								<h2 class="banner-title">The CyberShelf</h2>
+								<p>
+									Welcome to Cybershelf, where the past and future of literature intertwine.
+									This book store library offers a captivating blend of traditional books and digital wonders,
+									inviting you to embark on a literary journey like no other..
+								</p>
+								<div class="btn-wrap">
+									<a href="#" class="btn btn-outline-accent btn-accent-arrow">
+										Read More<i class="icon icon-ns-arrow-right"></i>
+									</a>
+								</div>
+							</div><!--banner-content-->
+							<img src="images/main-banner1.jpg" alt="banner" class="banner-image">
+						</div><!--slider-item-->
+
+						<div class="slider-item">
+							<div class="banner-content">
+								<h2 class="banner-title">Birds gonna be Happy</h2>
+								<p>
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu feugiat amet, libero
+									ipsum enim pharetra hac. Urna commodo, lacus ut magna velit eleifend. Amet, quis
+									urna, a eu.
+								</p>
+								<div class="btn-wrap">
+									<a href="#" class="btn btn-outline-accent btn-accent-arrow">
+										Read More<i class="icon icon-ns-arrow-right"></i>
+									</a>
+								</div>
+							</div><!--banner-content-->
+							<img src="images/main-banner2.jpg" alt="banner" class="banner-image">
+						</div><!--slider-item-->
+
+					</div><!--slider-->
+
+					<button class="next slick-arrow">
+						<i class="icon icon-arrow-right"></i>
+					</button>
+
+				</div>
+			</div>
+		</div>
+
+	</section>
+
+
+	<section id="popular-books" class="bookshelf py-5 my-5">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+
+					<div class="section-header align-center">
+						<div class="title">
+							<span>Some quality books</span>
+						</div>
+						<h2 class="section-title">All Books</h2>
+					</div>
+
+					<ul class="tabs">
+						<li data-tab-target="#all-genre" class="active tab">All Genre</li>
+						<li data-tab-target="#business" class="tab">Business</li>
+						<li data-tab-target="#technology" class="tab">Technology</li>
+						<li data-tab-target="#romantic" class="tab">Romantic</li>
+						<li data-tab-target="#adventure" class="tab">Adventure</li>
+						<li data-tab-target="#fictional" class="tab">Fictional</li>
+					</ul>
+
+					<div class="tab-content">
+						<div id="all-genre" data-tab-content class="active">
+							<div class="row">
+
+								<div class="col-md-3">
+									<div class="product-item">
+										<figure class="product-style">
+											<img src="images/tab-item1.jpg" alt="Books" class="product-item">
+											<button type="button" class="add-to-cart"
+													data-product-tile="add-to-cart">
+												View Details
+											</button>
+										</figure>
+										<figcaption>
+											<h3>Portrait photography</h3>
+											<span class="fa fa-star checked"></span>
+											<span class="fa fa-star checked"></span>
+											<span class="fa fa-star checked"></span>
+											<span class="fa fa-star"></span>
+											<span class="fa fa-star"></span><br>
+											<span>Adam Silber</span>
+
+										</figcaption>
+
+									</div>
+								</div>
+
+								<div class="col-md-3">
+									<div class="product-item">
+										<figure class="product-style">
+											<img src="images/tab-item2.jpg" alt="Books" class="product-item">
+											<button type="button" class="add-to-cart"
+													data-product-tile="add-to-cart">
+												View Details
+											</button>
+										</figure>
+										<figcaption>
+											<h3>Once upon a time</h3>
+
+											<span class="fa fa-star checked"></span>
+											<span class="fa fa-star checked"></span>
+											<span class="fa fa-star checked"></span>
+											<span class="fa fa-star"></span>
+											<span class="fa fa-star"></span><br>
+											<span>Klien Marry</span>
+										</figcaption>
+									</div>
+								</div>
+
+								<div class="col-md-3">
+									<div class="product-item">
+										<figure class="product-style">
+											<img src="images/tab-item3.jpg" alt="Books" class="product-item">
+											<button type="button" class="add-to-cart"
+													data-product-tile="add-to-cart">
+												Add to
+												Cart
+											</button>
+										</figure>
+										<figcaption>
+											<h3>Tips of simple lifestyle</h3>
+
+											<span class="fa fa-star checked"></span>
+											<span class="fa fa-star checked"></span>
+											<span class="fa fa-star checked"></span>
+											<span class="fa fa-star"></span>
+											<span class="fa fa-star"></span><br>
+											<span>Bratt Smith</span>
+										</figcaption>
+									</div>
+								</div>
+
+								<div class="col-md-3">
+									<div class="product-item">
+										<figure class="product-style">
+											<img src="images/tab-item4.jpg" alt="Books" class="product-item">
+											<button type="button" class="add-to-cart"
+													data-product-tile="add-to-cart">
+												Add to
+												Cart
+											</button>
+										</figure>
+										<figcaption>
+											<h3>Just felt from outside</h3>
+
+											<span class="fa fa-star checked"></span>
+											<span class="fa fa-star checked"></span>
+											<span class="fa fa-star checked"></span>
+											<span class="fa fa-star"></span>
+											<span class="fa fa-star"></span><br>
+											<span>Nicole Wilson</span>
+										</figcaption>
+									</div>
+								</div>
+
+							</div>
+							<div class="row">
+
+								<div class="col-md-3">
+									<div class="product-item">
+										<figure class="product-style">
+											<img src="images/tab-item5.jpg" alt="Books" class="product-item">
+											<button type="button" class="add-to-cart"
+													data-product-tile="add-to-cart">
+												Add to
+												Cart
+											</button>
+										</figure>
+										<figcaption>
+											<h3>Peaceful Enlightment</h3>
+											<span>Marmik Lama</span>
+											<span class="fa fa-star checked"></span>
+											<span class="fa fa-star checked"></span>
+											<span class="fa fa-star checked"></span>
+											<span class="fa fa-star"></span>
+											<span class="fa fa-star"></span>
+										</figcaption>
+									</div>
+								</div>
+
+								<div class="col-md-3">
+									<div class="product-item">
+										<figure class="product-style">
+											<img src="images/tab-item6.jpg" alt="Books" class="product-item">
+											<button type="button" class="add-to-cart"
+													data-product-tile="add-to-cart">
+												Add to
+												Cart
+											</button>
+										</figure>
+										<figcaption>
+											<h3>Great travel at desert</h3>
+											<span>Sanchit Howdy</span>
+											<span class="fa fa-star checked"></span>
+											<span class="fa fa-star checked"></span>
+											<span class="fa fa-star checked"></span>
+											<span class="fa fa-star"></span>
+											<span class="fa fa-star"></span>
+										</figcaption>
+									</div>
+								</div>
+
+								<div class="col-md-3">
+									<div class="product-item">
+										<figure class="product-style">
+											<img src="images/tab-item7.jpg" alt="Books" class="product-item">
+											<button type="button" class="add-to-cart"
+													data-product-tile="add-to-cart">
+												Add to
+												Cart
+											</button>
+										</figure>
+										<figcaption>
+											<h3>Life among the pirates</h3>
+											<span>Armor Ramsey</span>
+											<span class="fa fa-star checked"></span>
+											<span class="fa fa-star checked"></span>
+											<span class="fa fa-star checked"></span>
+											<span class="fa fa-star"></span>
+											<span class="fa fa-star"></span>
+										</figcaption>
+									</div>
+								</div>
+
+								<div class="col-md-3">
+									<div class="product-item">
+										<figure class="product-style">
+											<img src="images/tab-item8.jpg" alt="Books" class="product-item">
+											<button type="button" class="add-to-cart"
+													data-product-tile="add-to-cart">
+												Add to
+												Cart
+											</button>
+										</figure>
+										<figcaption>
+											<h3>Simple way of piece life</h3>
+											<span>Armor Ramsey</span>
+											<span class="fa fa-star checked"></span>
+											<span class="fa fa-star checked"></span>
+											<span class="fa fa-star checked"></span>
+											<span class="fa fa-star"></span>
+											<span class="fa fa-star"></span>
+										</figcaption>
+									</div>
+								</div>
+
+							</div>
+
+						</div>
+						<div id="business" data-tab-content>
+							<div class="row">
+								<div class="col-md-3">
+									<div class="product-item">
+										<figure class="product-style">
+											<img src="images/tab-item2.jpg" alt="Books" class="product-item">
+											<button type="button" class="add-to-cart"
+													data-product-tile="add-to-cart">
+												Add to
+												Cart
+											</button>
+										</figure>
+										<figcaption>
+											<h3>Peaceful Enlightment</h3>
+											<span>Marmik Lama</span>
+											<span class="fa fa-star checked"></span>
+											<span class="fa fa-star checked"></span>
+											<span class="fa fa-star checked"></span>
+											<span class="fa fa-star"></span>
+											<span class="fa fa-star"></span>
+										</figcaption>
+									</div>
+								</div>
+
+								<div class="col-md-3">
+									<div class="product-item">
+										<figure class="product-style">
+											<img src="images/tab-item4.jpg" alt="Books" class="product-item">
+											<button type="button" class="add-to-cart"
+													data-product-tile="add-to-cart">
+												Add to
+												Cart
+											</button>
+										</figure>
+										<figcaption>
+											<h3>Great travel at desert</h3>
+											<span>Sanchit Howdy</span>
+											<span class="fa fa-star checked"></span>
+											<span class="fa fa-star checked"></span>
+											<span class="fa fa-star checked"></span>
+											<span class="fa fa-star"></span>
+											<span class="fa fa-star"></span>
+										</figcaption>
+									</div>
+								</div>
+
+								<div class="col-md-3">
+									<div class="product-item">
+										<figure class="product-style">
+											<img src="images/tab-item6.jpg" alt="Books" class="product-item">
+											<button type="button" class="add-to-cart"
+													data-product-tile="add-to-cart">
+												Add to
+												Cart
+											</button>
+										</figure>
+										<figcaption>
+											<h3>Life among the pirates</h3>
+											<span>Armor Ramsey</span>
+											<span class="fa fa-star checked"></span>
+											<span class="fa fa-star checked"></span>
+											<span class="fa fa-star checked"></span>
+											<span class="fa fa-star"></span>
+											<span class="fa fa-star"></span>
+										</figcaption>
+									</div>
+								</div>
+
+								<div class="col-md-3">
+									<div class="product-item">
+										<figure class="product-style">
+											<img src="images/tab-item8.jpg" alt="Books" class="product-item">
+											<button type="button" class="add-to-cart"
+													data-product-tile="add-to-cart">
+												Add to
+												Cart
+											</button>
+										</figure>
+										<figcaption>
+											<h3>Simple way of piece life</h3>
+											<span>Armor Ramsey</span>
+											<span class="fa fa-star checked"></span>
+											<span class="fa fa-star checked"></span>
+											<span class="fa fa-star checked"></span>
+											<span class="fa fa-star"></span>
+											<span class="fa fa-star"></span>
+										</figcaption>
+									</div>
+								</div>
+
+							</div>
+						</div>
+
+						<div id="technology" data-tab-content>
+							<div class="row">
+								<div class="col-md-3">
+									<div class="product-item">
+										<figure class="product-style">
+											<img src="images/tab-item1.jpg" alt="Books" class="product-item">
+											<button type="button" class="add-to-cart"
+													data-product-tile="add-to-cart">
+												Add to
+												Cart
+											</button>
+										</figure>
+										<figcaption>
+											<h3>Peaceful Enlightment</h3>
+											<span>Marmik Lama</span>
+											<span class="fa fa-star checked"></span>
+											<span class="fa fa-star checked"></span>
+											<span class="fa fa-star checked"></span>
+											<span class="fa fa-star"></span>
+											<span class="fa fa-star"></span>
+										</figcaption>
+									</div>
+								</div>
+
+								<div class="col-md-3">
+									<div class="product-item">
+										<figure class="product-style">
+											<img src="images/tab-item3.jpg" alt="Books" class="product-item">
+											<button type="button" class="add-to-cart"
+													data-product-tile="add-to-cart">
+												Add to
+												Cart
+											</button>
+										</figure>
+										<figcaption>
+											<h3>Great travel at desert</h3>
+											<span>Sanchit Howdy</span>
+											<span class="fa fa-star checked"></span>
+											<span class="fa fa-star checked"></span>
+											<span class="fa fa-star checked"></span>
+											<span class="fa fa-star"></span>
+											<span class="fa fa-star"></span>
+										</figcaption>
+									</div>
+								</div>
+
+								<div class="col-md-3">
+									<div class="product-item">
+										<figure class="product-style">
+											<img src="images/tab-item5.jpg" alt="Books" class="product-item">
+											<button type="button" class="add-to-cart"
+													data-product-tile="add-to-cart">
+												Add to
+												Cart
+											</button>
+										</figure>
+										<figcaption>
+											<h3>Life among the pirates</h3>
+											<span>Armor Ramsey</span>
+											<div class="item-price">$ 40.00</div>
+										</figcaption>
+									</div>
+								</div>
+
+								<div class="col-md-3">
+									<div class="product-item">
+										<figure class="product-style">
+											<img src="images/tab-item7.jpg" alt="Books" class="product-item">
+											<button type="button" class="add-to-cart"
+													data-product-tile="add-to-cart">
+												Add to
+												Cart
+											</button>
+										</figure>
+										<figcaption>
+											<h3>Simple way of piece life</h3>
+											<span>Armor Ramsey</span>
+											<div class="item-price">$ 40.00</div>
+										</figcaption>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div id="romantic" data-tab-content>
+							<div class="row">
+								<div class="col-md-3">
+									<div class="product-item">
+										<figure class="product-style">
+											<img src="images/tab-item1.jpg" alt="Books" class="product-item">
+											<button type="button" class="add-to-cart"
+													data-product-tile="add-to-cart">
+												Add to
+												Cart
+											</button>
+										</figure>
+										<figcaption>
+											<h3>Peaceful Enlightment</h3>
+											<span>Marmik Lama</span>
+											<div class="item-price">$ 40.00</div>
+										</figcaption>
+									</div>
+								</div>
+
+								<div class="col-md-3">
+									<div class="product-item">
+										<figure class="product-style">
+											<img src="images/tab-item3.jpg" alt="Books" class="product-item">
+											<button type="button" class="add-to-cart"
+													data-product-tile="add-to-cart">
+												Add to
+												Cart
+											</button>
+										</figure>
+										<figcaption>
+											<h3>Great travel at desert</h3>
+											<span>Sanchit Howdy</span>
+											<div class="item-price">$ 40.00</div>
+										</figcaption>
+									</div>
+								</div>
+
+								<div class="col-md-3">
+									<div class="product-item">
+										<figure class="product-style">
+											<img src="images/tab-item5.jpg" alt="Books" class="product-item">
+											<button type="button" class="add-to-cart"
+													data-product-tile="add-to-cart">
+												Add to
+												Cart
+											</button>
+										</figure>
+										<figcaption>
+											<h3>Life among the pirates</h3>
+											<span>Armor Ramsey</span>
+											<div class="item-price">$ 40.00</div>
+										</figcaption>
+									</div>
+								</div>
+
+								<div class="col-md-3">
+									<div class="product-item">
+										<figure class="product-style">
+											<img src="images/tab-item7.jpg" alt="Books" class="product-item">
+											<button type="button" class="add-to-cart"
+													data-product-tile="add-to-cart">
+												Add to
+												Cart
+											</button>
+										</figure>
+										<figcaption>
+											<h3>Simple way of piece life</h3>
+											<span>Armor Ramsey</span>
+											<div class="item-price">$ 40.00</div>
+										</figcaption>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div id="adventure" data-tab-content>
+							<div class="row">
+								<div class="col-md-3">
+									<div class="product-item">
+										<figure class="product-style">
+											<img src="images/tab-item5.jpg" alt="Books" class="product-item">
+											<button type="button" class="add-to-cart"
+													data-product-tile="add-to-cart">
+												Add to
+												Cart
+											</button>
+										</figure>
+										<figcaption>
+											<h3>Life among the pirates</h3>
+											<span>Armor Ramsey</span>
+											<div class="item-price">$ 40.00</div>
+										</figcaption>
+									</div>
+								</div>
+
+								<div class="col-md-3">
+									<div class="product-item">
+										<figure class="product-style">
+											<img src="images/tab-item7.jpg" alt="Books" class="product-item">
+											<button type="button" class="add-to-cart"
+													data-product-tile="add-to-cart">
+												Add to
+												Cart
+											</button>
+										</figure>
+										<figcaption>
+											<h3>Simple way of piece life</h3>
+											<span>Armor Ramsey</span>
+											<div class="item-price">$ 40.00</div>
+										</figcaption>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div id="fictional" data-tab-content>
+							<div class="row">
+								<div class="col-md-3">
+									<div class="product-item">
+										<figure class="product-style">
+											<img src="images/tab-item5.jpg" alt="Books" class="product-item">
+											<button type="button" class="add-to-cart"
+													data-product-tile="add-to-cart">
+												Add to
+												Cart
+											</button>
+										</figure>
+										<figcaption>
+											<h3>Life among the pirates</h3>
+											<span>Armor Ramsey</span>
+											<div class="item-price">$ 40.00</div>
+										</figcaption>
+									</div>
+								</div>
+
+								<div class="col-md-3">
+									<div class="product-item">
+										<figure class="product-style">
+											<img src="images/tab-item7.jpg" alt="Books" class="product-item">
+											<button type="button" class="add-to-cart"
+													data-product-tile="add-to-cart">
+												Add to
+												Cart
+											</button>
+										</figure>
+										<figcaption>
+											<h3>Simple way of piece life</h3>
+											<span>Armor Ramsey</span>
+											<div class="item-price">$ 40.00</div>
+										</figcaption>
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+
+				</div><!--inner-tabs-->
+
+			</div>
+		</div>
+	</section>
+	<section id="best-selling" class="leaf-pattern-overlay">
+		<div class="corner-pattern-overlay"></div>
+		<div class="container">
+			<div class="row justify-content-center">
+
+				<div class="col-md-8">
+
+					<div class="row">
+
+						<div class="col-md-6">
+							<figure class="products-thumb">
+								<img src="images/single-image.jpg" alt="book" class="single-image">
+							</figure>
+						</div>
+
+						<div class="col-md-6">
+							<div class="product-entry">
+								<h2 class="section-title divider">Most Popular Book</h2>
+
+								<div class="products-content">
+									<div class="author-name">By Timbur Hood</div>
+									<h3 class="item-title">Birds gonna be happy</h3>
+									<p>
+										Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu feugiat amet,
+										libero ipsum enim pharetra hac.
+									</p>
+									<span class="fa fa-star checked"></span>
+									<span class="fa fa-star checked"></span>
+									<span class="fa fa-star checked"></span>
+									<span class="fa fa-star"></span>
+									<span class="fa fa-star"></span>
+									<div class="btn-wrap">
+										<a href="#" class="btn-accent-arrow">
+											View Book <i class="icon icon-ns-arrow-right"></i>
+										</a>
+									</div>
+								</div>
+
+							</div>
+						</div>
+
+					</div>
+					<!-- / row -->
+
+				</div>
+
+			</div>
+		</div>
+	</section>
+	<section id="quotation" class="align-center pb-5 mb-5" style="margin-top: 1em;">
+		<div class="inner-content">
+			<h2 class="section-title divider">Quote of the day</h2>
+			<blockquote data-aos="">
+				<q>
+					“The more that you read, the more things you will know. The more that you learn, the more places
+					you’ll go.”
+				</q>
+				<div class="author-name">Dr. Seuss</div>
+			</blockquote>
+		</div>
+	</section>
+
+
+	

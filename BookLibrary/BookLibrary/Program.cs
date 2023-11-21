@@ -9,9 +9,7 @@ using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
-using Microsoft.OpenApi.Models;
 using System;
-using System.Text;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -41,36 +39,32 @@ builder.Services.AddScoped<IGenreService, GenreService>();
 builder.Services.AddScoped<IAuthenticationRepository, AuthenticationRepository>();
 builder.Services.AddScoped<IAuthenticationService, AuthenticationService>();
 
-builder.Services.AddSwaggerGen(options =>
+/*builder.Services.AddSwaggerGen(options =>
 {
-    options.SwaggerDoc("v1", new OpenApiInfo { Title = "BookLibrary", Version = "v1" });
-
-    options.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme
+    options.AddSecurityDefinition(JwtBearerDefaults.AuthenticationScheme, new OpenApiSecurityScheme
     {
-        In = ParameterLocation.Header,
-        Description = "Fast Authentication Scheme",
         Name = "Authorization",
-        Type = SecuritySchemeType.Http,
-        BearerFormat = "Jwt",
-        Scheme = "Bearer"
+        In = ParameterLocation.Header,
+        Type = SecuritySchemeType.ApiKey,
+        Scheme = JwtBearerDefaults.AuthenticationScheme
     });
-
     options.AddSecurityRequirement(new OpenApiSecurityRequirement
     {
         {
-                new OpenApiSecurityScheme
+            new OpenApiSecurityScheme
+            {
+                Reference = new OpenApiReference
                 {
-                    Reference = new OpenApiReference
-                    {
-                        Type = ReferenceType.SecurityScheme,
-                        Id = "Bearer"
-                    },
-
+                    Type = ReferenceType.SecurityScheme,
+                    Id = JwtBearerDefaults.AuthenticationScheme
                 },
-                new string[] {}
+                Scheme = "Oauth2",
+                Name = JwtBearerDefaults.AuthenticationScheme,
+
+            }
         }
-    });
-});
+    })
+})*/
 
 builder.Services.AddAuthentication(options =>
 {
@@ -80,15 +74,14 @@ builder.Services.AddAuthentication(options =>
 {
     options.TokenValidationParameters = new TokenValidationParameters()
     {
-        ValidateIssuer = false,
-        ValidateAudience = false,
-        // ValidAudience = builder.Configuration["JWTKey:ValidAudience"],
-        // ValidIssuer = builder.Configuration["JWTKey:ValidIssuer"],
-        //  ClockSkew = TimeSpan.Zero,
+        ValidateIssuer = true,
+        ValidateAudience = true,
+        ValidateLifetime = true,
         ValidateIssuerSigningKey = true,
-        IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(builder.Configuration["Jwt:Key"]))
-    }; 
-    
+        ValidateActor = true,
+        ValidIssuer = "Issuer",
+        ValidAudience = "Audience",
+    };
 });
 
 
@@ -111,7 +104,6 @@ using (var scope = app.Services.CreateScope())
 
 app.UseHttpsRedirection();
 
-app.UseAuthentication();
 app.UseAuthorization();
 
 app.MapControllers();

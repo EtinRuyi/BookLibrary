@@ -1,7 +1,6 @@
 ﻿using BookLibrary.Data.Repository.Interface;
 using BookLibrary.Model.DTOs;
 using BookLibrary.Model.Entities;
-using BookLibrary.Model.Entities.Shared;
 using Microsoft.AspNetCore.Identity;
 
 namespace BookLibrary.Data.Repository.Implementation
@@ -10,16 +9,14 @@ namespace BookLibrary.Data.Repository.Implementation
     {
         private readonly UserManager<User> _userManager;
         private readonly RoleManager<IdentityRole> _roleManager;
-        private readonly SignInManager<User> _signInManager;
-        public AuthenticationRepository(UserManager<User> userManager, RoleManager<IdentityRole> roleManager, SignInManager<User> signInManager)
+        public AuthenticationRepository(UserManager<User> userManager, RoleManager<IdentityRole> roleManager)
         {
             _userManager = userManager;
             _roleManager = roleManager;
-            _signInManager = signInManager;
         }
         public async Task<bool> AddUser(User user, string password)
         {
-            var result = await _userManager.CreateAsync(user, password);
+            var result = await _userManager.CreateAsync(user, password);//Create user asynchronously
             if (result.Succeeded)
             {
                 await _userManager.AddToRoleAsync(user, "RegularUser");
@@ -37,18 +34,9 @@ namespace BookLibrary.Data.Repository.Implementation
             return await _userManager.FindByEmailAsync(login.Email);
         }
 
-        public async Task<bool> Logout()
+        public Task<bool> Logout()
         {
-            if (_signInManager != null)
-            {
-                await _signInManager.SignOutAsync();
-                return true;
-            }
-            else
-            {
-                return false;
-            }
+            throw new NotImplementedException();
         }
-
     }
 }

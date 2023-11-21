@@ -40,6 +40,34 @@ C:\Users\omoru\Desktop\week-9-10-task-group-d-1\BookLibrary\BookLibrary.Model\ob
 C:\Users\omoru\Desktop\week-9-10-task-group-d-1\BookLibrary\BookLibrary.Model\obj\Debug\net7.0\BookLibrary.Model.pdb
 C:\Users\omoru\Desktop\week-9-10-task-group-d-1\BookLibrary\BookLibrary.Model\obj\Debug\net7.0\BookLibrary.Model.genruntimeconfig.cache
 C:\Users\omoru\Desktop\week-9-10-task-group-d-1\BookLibrary\BookLibrary.Model\obj\Debug\net7.0\ref\BookLibrary.Model.dll
+C:\Users\HP\Desktop\LIB\BookLibrary\BookLibrary\BookLibrary.Model\bin\Debug\net7.0\BookLibrary.Model.deps.json
+C:\Users\HP\Desktop\LIB\BookLibrary\BookLibrary\BookLibrary.Model\bin\Debug\net7.0\BookLibrary.Model.runtimeconfig.json
+C:\Users\HP\Desktop\LIB\BookLibrary\BookLibrary\BookLibrary.Model\bin\Debug\net7.0\BookLibrary.Model.dll
+C:\Users\HP\Desktop\LIB\BookLibrary\BookLibrary\BookLibrary.Model\bin\Debug\net7.0\BookLibrary.Model.pdb
+C:\Users\HP\Desktop\LIB\BookLibrary\BookLibrary\BookLibrary.Model\obj\Debug\net7.0\BookLibrary.Model.csproj.AssemblyReference.cache
+C:\Users\HP\Desktop\LIB\BookLibrary\BookLibrary\BookLibrary.Model\obj\Debug\net7.0\BookLibrary.Model.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\HP\Desktop\LIB\BookLibrary\BookLibrary\BookLibrary.Model\obj\Debug\net7.0\BookLibrary.Model.AssemblyInfoInputs.cache
+C:\Users\HP\Desktop\LIB\BookLibrary\BookLibrary\BookLibrary.Model\obj\Debug\net7.0\BookLibrary.Model.AssemblyInfo.cs
+C:\Users\HP\Desktop\LIB\BookLibrary\BookLibrary\BookLibrary.Model\obj\Debug\net7.0\BookLibrary.Model.csproj.CoreCompileInputs.cache
+C:\Users\HP\Desktop\LIB\BookLibrary\BookLibrary\BookLibrary.Model\obj\Debug\net7.0\BookLibrary.Model.dll
+C:\Users\HP\Desktop\LIB\BookLibrary\BookLibrary\BookLibrary.Model\obj\Debug\net7.0\refint\BookLibrary.Model.dll
+C:\Users\HP\Desktop\LIB\BookLibrary\BookLibrary\BookLibrary.Model\obj\Debug\net7.0\BookLibrary.Model.pdb
+C:\Users\HP\Desktop\LIB\BookLibrary\BookLibrary\BookLibrary.Model\obj\Debug\net7.0\BookLibrary.Model.genruntimeconfig.cache
+C:\Users\HP\Desktop\LIB\BookLibrary\BookLibrary\BookLibrary.Model\obj\Debug\net7.0\ref\BookLibrary.Model.dll
+C:\Users\omoru\Downloads\BookLibrary 1\BookLibrary\BookLibrary.Model\bin\Debug\net7.0\BookLibrary.Model.deps.json
+C:\Users\omoru\Downloads\BookLibrary 1\BookLibrary\BookLibrary.Model\bin\Debug\net7.0\BookLibrary.Model.runtimeconfig.json
+C:\Users\omoru\Downloads\BookLibrary 1\BookLibrary\BookLibrary.Model\bin\Debug\net7.0\BookLibrary.Model.dll
+C:\Users\omoru\Downloads\BookLibrary 1\BookLibrary\BookLibrary.Model\bin\Debug\net7.0\BookLibrary.Model.pdb
+C:\Users\omoru\Downloads\BookLibrary 1\BookLibrary\BookLibrary.Model\obj\Debug\net7.0\BookLibrary.Model.csproj.AssemblyReference.cache
+C:\Users\omoru\Downloads\BookLibrary 1\BookLibrary\BookLibrary.Model\obj\Debug\net7.0\BookLibrary.Model.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\omoru\Downloads\BookLibrary 1\BookLibrary\BookLibrary.Model\obj\Debug\net7.0\BookLibrary.Model.AssemblyInfoInputs.cache
+C:\Users\omoru\Downloads\BookLibrary 1\BookLibrary\BookLibrary.Model\obj\Debug\net7.0\BookLibrary.Model.AssemblyInfo.cs
+C:\Users\omoru\Downloads\BookLibrary 1\BookLibrary\BookLibrary.Model\obj\Debug\net7.0\BookLibrary.Model.csproj.CoreCompileInputs.cache
+C:\Users\omoru\Downloads\BookLibrary 1\BookLibrary\BookLibrary.Model\obj\Debug\net7.0\BookLibrary.Model.dll
+C:\Users\omoru\Downloads\BookLibrary 1\BookLibrary\BookLibrary.Model\obj\Debug\net7.0\refint\BookLibrary.Model.dll
+C:\Users\omoru\Downloads\BookLibrary 1\BookLibrary\BookLibrary.Model\obj\Debug\net7.0\BookLibrary.Model.pdb
+C:\Users\omoru\Downloads\BookLibrary 1\BookLibrary\BookLibrary.Model\obj\Debug\net7.0\BookLibrary.Model.genruntimeconfig.cache
+C:\Users\omoru\Downloads\BookLibrary 1\BookLibrary\BookLibrary.Model\obj\Debug\net7.0\ref\BookLibrary.Model.dll
 C:\Users\omoru\Desktop\BookLibrary\BookLibrary\BookLibrary.Model\bin\Debug\net7.0\BookLibrary.Model.deps.json
 C:\Users\omoru\Desktop\BookLibrary\BookLibrary\BookLibrary.Model\bin\Debug\net7.0\BookLibrary.Model.runtimeconfig.json
 C:\Users\omoru\Desktop\BookLibrary\BookLibrary\BookLibrary.Model\bin\Debug\net7.0\BookLibrary.Model.dll

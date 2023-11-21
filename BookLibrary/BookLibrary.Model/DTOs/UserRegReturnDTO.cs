@@ -16,7 +16,6 @@ namespace BookLibrary.Model.DTOs
         [Required]
         public string LastName { get; set; }
         [Required]
-        [EmailAddress]
         [DataType(DataType.EmailAddress)]
         public string Email { get; set; }
         [Required]
