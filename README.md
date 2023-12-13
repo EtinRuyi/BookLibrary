@@ -1,6 +1,6 @@
 #Book Library Web Application
 Overview
-This is an online Book Library web application designed and developed by a team of 5 software developers. The application is built with a focus on providing a user-friendly interface for managing and accessing a digital book collection.
+This is an online Book Library web  application is built with a focus on providing a user-friendly interface for managing and accessing a digital book collection.
 
 Technologies Used
 C#: Programming language used for backend development.
